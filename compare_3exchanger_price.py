@@ -16,6 +16,8 @@ def get_response(api):
 def get_all_api(symbol):
     UPBIT_api = 'https://crix-api-endpoint.upbit.com/v1/crix/candles/minutes/60?code=CRIX.UPBIT.USDT-' + symbol
     BINANCE_api = 'https://api.binance.com/api/v1/ticker/price?symbol=' + symbol + 'USDT'
+    print(UPBIT_api)
+    print(BINANCE_api)
     list = [UPBIT_api, BINANCE_api]
     return list
 
